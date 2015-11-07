@@ -35,7 +35,7 @@ Once module installed, you could declare the module into your __"config/applicat
 Copy/Paste the configuration file and change configuration options according to your social accounts.
 Note: You must create applications for that...
 
-    cp vendor/antuan-sehikyan/image-manager/config/doctrine.local.php.dist config/autoload/doctrine.local.php
+    cp vendor/ledsinclouds/leds-js-slider/config/doctrine.local.php.dist config/autoload/doctrine.local.php
 	
 ##Create your Database:
 
