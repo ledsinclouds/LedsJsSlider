@@ -1,0 +1,27 @@
+{
+    "name": "ledsinclouds/leds-js-slider",
+    "description": "ZF2 Module implementing Basic jQuery Slider",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2"
+    ],
+    "homepage": "https://github.com/ledsinclouds/LedsJsSlider.git",
+    "minimum-stability": "dev",
+    "repositories": [
+		{
+			"type": "vcs", 
+			"url": "https://github.com/ledsinclouds/LedsJsSlider.git"
+		}
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "doctrine/doctrine-orm-module": "0.*"	
+    },
+    "autoload": {
+        "psr-0": {
+            "LedsJsSlider\\": "src/"
+        }
+    }
+}   

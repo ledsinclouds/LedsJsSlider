@@ -1,0 +1,28 @@
+<?php 
+//$this->headLink()->appendStylesheet($this->basePath('js/slider/bjqs.css')); 
+//$this->inlineScript()->appendFile($this->basePath('js/slider/bjqs.js')); 
+$title = 'SlideShow';
+echo $this->headTitle($title);
+?>
+
+
+<div id="container">
+	<h1><a href="http://www.basic-slider.com/">http://www.basic-slider.com/</a></h1>
+	<div class="row">
+		<div class="col-md-12">
+			<div id="bjqs">
+				<?php echo $this->slideShow(); ?>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	jQuery(document).ready(function($) {
+		$('#bjqs').bjqs({
+			'height' : 320,
+			'width' : 620,
+			'responsive' : true
+		});
+	});
+</script>
