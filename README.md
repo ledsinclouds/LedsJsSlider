@@ -46,15 +46,5 @@ Note: You must create applications for that...
 
 You can use it with the ViewHelper provided in this module
 
-	<div id="container">
-		<?php echo $this->slideShow(); ?>
-	</div>
-	<script>
-		jQuery(document).ready(function($) {
-			$('#container').bjqs({
-				'height' : 320,
-				'width' : 620,
-				'responsive' : true
-			});
-		});
-	</script>  
+	<?php echo $this->slideShow(); ?>
+
