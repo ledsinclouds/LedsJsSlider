@@ -46,7 +46,7 @@ Note: You must create applications for that...
 
 You can use it with the ViewHelper provided in this module
 
-	&lt;div id="container">
+	<div id="container">
 		&lt;?php echo $this->slideShow(); ?>
 	&lt;/div>
 	&lt;script>
