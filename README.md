@@ -47,9 +47,9 @@ Note: You must create applications for that...
 You can use it with the ViewHelper provided in this module
 
 	<div id="container">
-		&lt;?php echo $this->slideShow(); ?>
-	&lt;/div>
-	&lt;script>
+		<?php echo $this->slideShow(); ?>
+	</div>
+	<script>
 		jQuery(document).ready(function($) {
 			$('#container').bjqs({
 				'height' : 320,
@@ -57,4 +57,4 @@ You can use it with the ViewHelper provided in this module
 				'responsive' : true
 			});
 		});
-	&lt;/script>  
+	</script>  
