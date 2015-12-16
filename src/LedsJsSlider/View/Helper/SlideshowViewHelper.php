@@ -31,12 +31,14 @@ class SlideshowViewHelper extends AbstractHtmlElement{
 	public function openTag(){
         $this->getView()->headScript()
             ->appendFile($this->getView()->basePath('/js/slider/bjqs.js'));
+        $this->getView()->headScript()
+            ->appendFile($this->getView()->basePath('/js/slider/bjqs_init.js'));            
         $this->getView()->headLink()
             ->appendStylesheet($this->getView()->basePath('/js/slider/bjqs.css'));
-
+            
         $attributes = $this->htmlAttribs($this->options['attributes']);
 
-        return sprintf("<ul%s>", $attributes) . PHP_EOL;
+        return sprintf("<div id='container'><ul%s>", $attributes) . PHP_EOL;
     }	
 
 	//public function slides(){
@@ -95,7 +97,7 @@ class SlideshowViewHelper extends AbstractHtmlElement{
     }    
 
 	public function closeTag(){
-        return '</ul>' . PHP_EOL;
+        return '</ul></div>' . PHP_EOL;
     }
 
 	protected function getSlides(){
@@ -114,37 +116,3 @@ class SlideshowViewHelper extends AbstractHtmlElement{
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
